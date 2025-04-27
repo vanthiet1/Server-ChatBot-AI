@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Environment files
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Build output
+/dist
+/build
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# IDEs and Text Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS-specific
+*.DS_Store
+
+# Windows-specific
+Thumbs.db

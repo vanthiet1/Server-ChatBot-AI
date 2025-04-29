@@ -1,5 +1,5 @@
-const Router = require('express').Rourer()
+const Router = require('express').Router()
 const webhookController = require('../controllers/webhookController')
-Router.get('/webhook',webhookController.verifyWebhook)
-Router.post('/webhook',webhookController.receiveMessage)
+Router.get('/',webhookController.verifyWebhook)
+Router.post('/',webhookController.receiveMessage)
 module.exports = Router

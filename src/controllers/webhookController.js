@@ -33,7 +33,7 @@ const webhookContrller = {
     },
     sendMessage: (recipientId, message) => {
         console.log(recipientId, message);
-        axios.post(`https://graph.facebook.com/v22.0/me/messages?access_token=${PAGE_ACCESS_TOKEN}`, {
+        axios.post(`https://graph.facebook.com/v22.0/me/messages?access_token=${PAGE_ACCSESS_TOKEN}`, {
             recipient: { id: recipientId },
             message: { text: message }
         })

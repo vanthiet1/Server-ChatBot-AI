@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-      "ngrok": "ngrok http 8080"
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "axios": "^1.9.0",

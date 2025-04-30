@@ -1,10 +1,6 @@
 const axios = require('axios');
-
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 const PAGE_ACCSESS_TOKEN = process.env.PAGE_ACCSESS_TOKEN;
-console.log('VERIFY_TOKEN:', VERIFY_TOKEN);
-console.log('PAGE_ACCSESS_TOKEN:', PAGE_ACCSESS_TOKEN);
-
 const webhookContrller = {
     // Xác minh webhook khi cấu hình trên Facebook Developer
     verifyWebhook: (req, res) => {
@@ -25,7 +21,7 @@ const webhookContrller = {
     // Nhận tin nhắn từ người dùng gửi đến page
     receiveMessage: (req, res) => {
         const data = req.body;
-
+          console.log('data',data);
         if (data.object === 'page') {
             data.entry.forEach(entry => {
                 const messaging = entry.messaging[0];
